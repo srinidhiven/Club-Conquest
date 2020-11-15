@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<nav>
+	<ul class="navigation">
+		<li><a href="overview.html">Overview</a></li>
+    <li><a href="studentRoster.html">Student Roster</a></li>
+		<li><a href="eventList.html">Event List</a></li>
+    <li><a href="index.html">Logout</a></li>
+
+	</ul>
+</nav>
+
+
+<body>
+  <main id="overview-holder">
+	<h1 id="overview-header">Club Overview</h1>
+	<h3>Welcome to <span id="clubNameResult"></span> at <span id="schoolNameResult"></span></h3>
+  <h4>Advisor: <span id="advisorNameResult"></span></h4>
+  <h5>Club description: <span id="descriptionValueResult"></span></h5>
+    <script>
+      document.getElementById("schoolNameResult").innerHTML = localStorage.getItem("schoolName");
+ /* <h1> ""'s "*/
+      document.getElementById("clubNameResult").innerHTML = localStorage.getItem("clubName");
+/* <h1> ". This club is run by " */
+      document.getElementById("advisorNameResult").innerHTML = localStorage.getItem("advisorName");
+/* <h1> ". Heres an overview of the club: "*/
+      document.getElementById("descriptionValueResult").innerHTML = localStorage.getItem("description");
+      </script>
+
+  </br>
+  </br>
+  <button><a href="editoverview.html">Edit Overview Information</button>
+
+  </body>
+
+
+
+<br>
+<br>
+
+  
+</html>

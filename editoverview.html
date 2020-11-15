@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="editoverview.js" rel="stylesheet" type="text/js" />
+	<script language="JavaScript">
+    function passOverviewValues () {
+        var schoolName = document.getElementById("schoolname-field").value;
+        localStorage.setItem("schoolName",schoolName);
+
+        var clubName = document.getElementById("clubname-field").value;
+        localStorage.setItem("clubName",clubName);
+
+        var advisorName = document.getElementById("advisorname-field").value;
+        localStorage.setItem("advisorName",advisorName);
+
+        var descriptionName = document.getElementById("description-field").value;
+        localStorage.setItem("description",descriptionName);
+        return false;
+    }
+  </script>
+</head>
+
+
+<nav>
+	<ul class="navigation">
+    <li><a href="overview.html">Overview</a></li>
+    <li><a href="studentRoster.html">Student Roster</a></li>
+		<li><a href="eventList.html">Event List</a></li>
+    <li><a href="index.html">Logout</a></li>
+	</ul>
+</nav>
+
+
+</body>
+<main id="editoverview-holder">
+	<h1 id="editoverview-header">Edit Your Overview Page</h1>
+    
+    <form id="overview-form" action="overview.html">
+      <label for="schoolname-field"></label>
+      <input type="text" name="schoolname" id="schoolname-field" class="overview-form-field" placeholder="School Name" required>
+
+      <label for="clubname-field"></label>
+      <input type="text" name="clubname" id="clubname-field" class="overview-form-field" placeholder="Club Name" required>
+
+      <label for="advisorname-field"></label>
+      <input type="text" name="advisorname"  id="advisorname-field" class="overview-form-field" placeholder="Advisor Name"required>
+
+      <label for="description-field"></label>
+      <input type="text" name="description" id="description-field" class="description-form-field" placeholder="Brief Description" size="50"><br>
+
+      <input type="submit" value="Add to Overview" id="overview-submit" onclick="passOverviewValues();"><br/>
+    </form>
+  
+  </main>
+</body>
+
+</html>
+  
+</html>

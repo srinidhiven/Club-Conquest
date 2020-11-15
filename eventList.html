@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Event List</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="eventList.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <li><a href="overview.html">Overview</a></li>
+      <li><a href="studentRoster.html">Student Roster</a></li>
+		  <li><a href="eventList.html">Event List</a></li>
+      <li><a href="index.html">Logout</a></li>
+    </header>
+
+    <main>
+       <main id="eventList-holder">
+	    <br> <br><h1 id="eventList-header">Event Holder</h1><br> <br>
+      <section class="new-event">. <!--new-note-->
+        <h2>Add an Event</h2>
+        <form>
+          <div>
+            <input class = "textField" id="title" type="text" placeholder="Activity" required>
+          </div>
+          <div>
+            <input class = "textField" id="otherBody" type="text" placeholder="Details" required>
+          </div>
+          <div>
+            <input class = "textField" id="body" type="text" name="date" placeholder="Date" required>    
+          </div>
+          <div>
+            <button>Create new event</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="eventlist-display">.  <!-- "note-display" -->
+        <h2>Events</h2>
+        <ul>
+
+        </ul>
+      </section>
+
+
+    </main>
+
+    <footer>
+    </footer>
+  </body>
+</html>

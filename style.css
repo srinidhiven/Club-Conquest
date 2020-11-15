@@ -1,0 +1,594 @@
+html {
+  height: 50%;
+}
+
+body {
+  background-image: url('https://i.ibb.co/cb4tW8T/Background.jpg');
+  margin-top: 20px;
+  font-family: Verdana;
+  display: grid;
+  justify-items: center;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+ul.navigation {
+    list-style-type: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+.background {
+  width: 100%;
+  height: 400%;
+  justify-items: center;
+  align-items: center;
+  margin: 0px;
+  border: 0px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+button {
+  opacity: 0.9;
+  background-color: #3a3a3a;
+  padding: 10px;
+  margin: 10px;
+  min-width: 150px;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  display: inline-block;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+button:span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#login-submit {
+  opacity: 0.9;
+  background-color: #3a3a3a;
+  padding: 10px;
+  margin: 10px;
+  min-width: 150px;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  display: inline-block;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#login-submit:span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#login-submit:hover {
+  background-color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+a {
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button:hover a {
+  color: #3a3a3a;
+}
+
+#frontPageButton:hover {
+  color: #3a3a3a;
+}
+
+h1 {
+  justify-self: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  align-content: center;
+}
+
+ul {
+  float: left;
+}
+
+#login-header {
+  margin: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#main-holder {
+  width: 25%;
+  padding: 30px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: snow;
+  border-radius: 7px;
+  box-shadow: 0px 0px 2px 2px steelblue;
+}
+
+/*LOGIN*/
+
+#login-error-msg-holder {
+  align-items: center;
+}
+
+#login-error-msg {
+  text-align: center;
+  margin: 0;
+  font-size: 12px;
+  font-weight: bold;
+  color: #8a0000;
+  border: 1px solid #8a0000;
+  background-color: #e58f8f;
+  opacity: 0;
+}
+
+#error-msg-second-line {
+  display: block;
+}
+
+#login-form {
+  size: 600px;
+  justify-items: center;
+  align-items: center;
+}
+
+.login-form-field::placeholder {
+  color: #3a3a3a;
+}
+
+.login-form-field {
+  border: none;
+  border-bottom: 1px solid #3a3a3a;
+  margin: 20px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  outline: none;
+  padding: 0px 0px 5px 5px;
+}
+
+#login-submit {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: #3a3a3a;
+  cursor: pointer;
+  outline: none;
+}
+
+/*ATTENDANCE*/
+
+#attendance-header {
+  margin-top: 35px;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#attendance-holder {
+  width: 70%;
+  height: 130%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: snow;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px steelblue;
+}
+
+#attendance-error-msg-holder {
+  width: 150%;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+#attendance-error-msg {
+  width: 23%;
+  text-align: center;
+  margin: 5;
+  padding:5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #8a0000;
+  border: 1px solid #8a0000;
+  background-color: #e58f8f;
+  opacity: 0;
+}
+
+#error-msg-attendance-line {
+  display: block;
+}
+
+#attendance-form {
+  align-self: flex-start;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.attendance-form-field::placeholder {
+  color: #3a3a3a;
+}
+
+.attendance-form-field {
+  border: none;
+  border-bottom: 1px solid #3a3a3a;
+  margin: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  outline: none;
+  padding: 0px 0px 5px 5px;
+}
+
+#attendance-submit {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: #3a3a3a;
+  cursor: pointer;
+  outline: none;
+}
+
+ /*SIGN UP*/
+
+#signup-header {
+  margin-top: 10px;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#signup-holder {
+  width: 20%;
+  height: 120%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: snow;
+  border-radius: 7px;
+  box-shadow: 0px 0px 2px 2px steelblue;
+  
+}
+
+#signup-form {
+  align-self: flex-start;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.signup-form-field::placeholder {
+  color: #3a3a3a;
+}
+
+.signup-form-field {
+  border: none;
+  border-bottom: 1px solid #3a3a3a;
+  margin: 20px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  outline: none;
+  padding: 0px 0px 5px 5px;
+}
+
+#submit-button {
+  width: 70%;
+  color: white;
+  font-weight: bold;
+  background-color: #3a3a3a;
+  cursor: pointer;
+  outline: none;
+  opacity: 0.9;
+  padding: 10px;
+  margin: 10px;
+  min-width: 150px;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  display: inline-block;
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  transition: all 0.5s;
+}
+
+#submit-button:span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#submit-button:hover {
+  background-color: white;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+ /*OVERVIEW*/
+
+#overview-header {
+  margin: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#overview-holder {
+  width: 25%;
+  padding: 40px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: snow;
+  border-radius: 7px;
+  box-shadow: 0px 0px 2px 2px steelblue;
+}
+
+#editoverview-header {
+  margin-top: 20px;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#editoverview-holder {
+  width: 40%;
+  height: 130%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: snow;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px steelblue;
+}
+
+#overview-form {
+  align-self: flex-start;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.overview-form-field::placeholder {
+  color: #3a3a3a;
+}
+
+.overview-form-field {
+  border: none;
+  border-bottom: 1px solid #3a3a3a;
+  margin: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  outline: none;
+  margin: 30px;
+}
+
+#overview-submit {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  background-color: #3a3a3a;
+  cursor: pointer;
+  outline: none;
+  border-bottom: 1px solid #3a3a3a;
+  margin-bottom: 10px;
+  margin: 30px;
+}
+
+/*Student Roster*/
+
+
+#studentList-header {
+  margin: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#studentList-holder {
+  width: 100%;
+  padding: 30px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: snow;
+  border-radius: 7px;
+  box-shadow: 0px 0px 2px 2px steelblue;
+}
+
+
+.textField {
+  border: none;
+  border-bottom: 1px solid #3a3a3a;
+  margin: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  outline: none;
+}
+
+/* #studentList-holder {
+  width: 200%;
+  padding: 15px;
+  display: grid;
+  justify-self: center;
+  justify-items: center;
+  align-items: center;
+  background-color: snow;
+  border-radius: 7px;
+  box-shadow: 0px 0px 2px 2px steelblue;
+}
+
+.studentList {
+  padding: 30px;
+  padding-right: 400px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: rgba(255, 250, 250, 0);
+  border-radius: 7px;
+}
+header, footer {
+  background-color: #3a3a3a;
+  color: white;
+  line-height: 10px;
+  padding: 0 20px;
+}
+
+.new-studentList, .studentList-display {
+  padding: 20px;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+.new-studentList {
+  background:white;
+}
+
+h1 {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+header, footer {
+  background-color: powderblue;
+  color: black;
+  line-height: 100px;
+  padding: 0 20px;
+}
+
+.new-studentList, .studentList-display {
+  padding: 20px;
+}
+
+.new-studentList {
+  background: #ddd;
+}
+
+h1 {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+div {
+  margin-bottom: 10px;
+}
+#studentList-header {
+  margin: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*HOME*/
+
+#home-header {
+  margin: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#home-holder {
+  width: 25%;
+  padding: 30px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: snow;
+  border-radius: 7px;
+  box-shadow: 0px 0px 2px 2px steelblue;
+}
+
+/* .navigation {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  display: block;
+  padding: 8px;
+  margin-bottom: 30px;
+} */
+
+/*student list*/
+
+
+
+
+/*event list*/
+#eventList-header {
+  margin: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#eventList-holder {
+  width: 100%;
+  padding: 30px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: snow;
+  border-radius: 7px;
+  box-shadow: 0px 0px 2px 2px steelblue;
+}
+
+
+.textField {
+  border: none;
+  border-bottom: 1px solid #3a3a3a;
+  margin: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  outline: none;
+}
